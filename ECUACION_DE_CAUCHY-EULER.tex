@@ -1,0 +1,254 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{times}
+\usepackage[spanish]{babel}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\setlength {\parskip}{1mm}
+\renewcommand{\baselinestretch}{1.6}
+\author{Marlin Estefany Popayan Popayan}
+\begin{document}
+\begin{center}
+\textbf{ECUACIONES LINEALES DE ORDEN SUPERIOR\\
+ECUACIÓN DE CAUCHY-EULER}\\
+\vspace{3cm}
+\textbf{PRESENTADO POR}\\
+\textbf{MARLIN ESTEFANY POPAYAN POPAYAN\\} 
+\vspace{3cm}
+\textbf{PRESENTADO A}\\
+\textbf{JHONATAN COLLAZOS RAMIREZ\\}
+\vspace{3cm}
+\textbf{PRIMER VERANO ECUACIONES DIFERENCIALES}\\
+\vspace{1cm}
+\textbf{UNIVERSIDAD DEL CAUCA}\\
+\vspace{1cm}
+\textbf{FACULTAD DE INGENIERIA CIVIL}\\
+\vspace{1cm}
+\textbf{SANTANDER DE QUILICHAO (CAUCA)}\\
+\vspace{3cm}
+\textbf{29/08/2022}
+\end{center}
+\pagebreak
+\tableofcontents
+\pagebreak
+\section{{\normalsize INTRODUCCIÓN.}}
+En este trabajo se estudiará las ecuaciones diferenciales de orden superior con coeficientes variables, estas ecuaciones se dice que son las más difícil de resolver, ya que no se resuelven en términos de funciones elementales; una forma para desarrollarlas es suponer una solución en forma de series infinitas para poder aplicar el método de coeficientes indeterminados. Sin embargo, existe una ecuación de coeficientes variables que es una excepción, por que esta tiene una solución general que se puede expresar en términos de potencias de x, senos, cosenos y funciones logarítmicas, esta ecuación es la que se conoce como la ecuación de Cauchy - Euler. Se hará énfasis en los métodos y casos; como lo son raíces reales y distintas, raíces reales repetidas, raíces complejas conjugadas y el caso no homogéneo; también se estudiará la reducción a coeficientes constantes para la solución de esta.\\
+\begin{flushleft}
+\section{{\normalsize DESARROLLO.}}
+\subsection{{\large Definición ecuación Cauchy - Euler.}} Es una ecuación diferencial de la forma\\
+\end{flushleft}
+
+$$a_{n}x^{n}\frac{d^{n}y}{dx^{n}} + a_{n-1}\frac{d^{n-1}}{dx^{n-1}} + \cdots + a_{1}x\frac{dy}{dx} + a_{0}y=g(x)$$\\
+Si los coeficientes 
+$a_{n}$,$a_{n-1},\cdots,a_{0}$  
+son constantes, entonces se dice que es una ecuación de \textbf{Cauchy - Euler.} La característica observable de este tipo de ecuación es que el grado ${k = n,n-1,}\cdots,1,0$ de los coeficientes monomiales $x^{k}$ coincide con el orden 
+\emph{k} de la derivada \begin{Large} $\frac{d^{k}y}{dx^{k}}$
+\end{Large}
+\begin{flushleft}
+Los coeficientes\\
+\end{flushleft}
+$$b_{n}(x)=a_{n}x^{n},\hspace{0.5cm}b_{n-1}(x)=a_{n-1}x^{n-1},\hspace{0.5cm}\cdots,\hspace{0.5cm}b_{1}(x)=a_{1}x^{1},\hspace{0.5cm}b_{0}(x)=a_{0}x^{0}$$
+Son dependientes de \textbf{\emph{x}}, es decir son coeficientes variables.\\
+Se desarrollará con todo detalle el método de resolución de la ecuación de Cauchy - Euler para el caso de segundo orden, sabiendo que es posible extender el método a cualquier orden $n$ aplicando el mismpo procedimiento.
+Soluciones generales de la ecuación homogénea de segundo orden\\
+$$ax^{2}\frac{d^{2}y}{dx^{2}}+bx\frac{dy}{dx}+cy=0 \hspace{0.5cm} Con \hspace{0.1cm}\emph{a},\hspace{0.1cm} \emph{b}\hspace{0.1cm} y  \hspace{0.1cm}\emph{c} \hspace{0.1cm}constantes$$\\
+Para resolver la ecuación no homogénea\\
+$$ax^{2}\frac{d^{2}y}{dx^{2}}+bx\frac{dy}{dx}+cy=g(x)$$\\
+Cuando $g(x)\neq 0$ Se aplica el método de variación de parámetros, teniendo la función complementaria $y_{c}$, osea la solución general de la ecuación homogénea.
+Una consideración importante es que el coeficiente $ax^{2}$ de \begin{Large}$\frac{d^{2}y}{dx^{2}}$\end{Large} es cero en $x=0$, para garantizar los resultados fundamentales del teorema de existencia y unicidad y sean aplicables a la ecuación de Cauchy - Euler debemos encontar soluciones generales definidas en el intervalo $\delta=(0,\infty)$. Las soluciones en el intervalo $(-\infty,0)$ se obtienen al sustituir $t = -x$ en la ecuación diferencial.
+
+\begin{flushleft}
+\subsection{{\large  Método de resolución}}
+\end{flushleft}
+Para el caso de las ecuaciones diferenciales con coeficientes constantes se propuso como solución una función de la forma
+$$y(x)=e^{kx}$$
+También se puede dar una solución de la forma\\
+$$y(x)=x^{k}$$\\
+Donde $k$ es un valor que se debe determinar. Al sustituir $x^{k}$, cada término de una ecuación de Cauchy - Euler se convierte en un polinomio en $k$ veces $x^{k}$, puesto que
+
+$$a_{n}x^{n}\frac{d^{n}y}{dx^{n}}=a_{n}x^{n}[k(k-1)(k-2)\cdots(k-n+1)x^{k-n}]$$
+$$=[a_{n}k(k-1)(k-2)\cdots(k-n+1)]x^{k}$$
+
+\begin{flushleft}
+Por ejemplo, al reemplazar $y=x^{k}$ y las respectivas derivadas en la ecuación de segundo orden, se tiene\\
+\end{flushleft}
+
+$$ax^{2}\frac{d^{2}y}{dx^{2}}+bx\frac{dy}{dx}+cy  =ax^{2}[k(k-1)x^{k-2}]+bx[kx^{k-1}]+cx^{k}$$
+$$=ak(k-1)x^{k}+bkx^{k}+cx^{k}$$
+$$=[ak(k-1)+bk+c]x^{k}$$
+Así, $y=x^{k}$ es una solución de la ecuación diferencial homogénea siempre que $k$ seaa una solución de la ecuación auxiliar
+$$ak(k-1)+bk+c=0$$
+O bien,
+$$ak^{2}+(b-a)k+c=0$$
+Existen tres casos distintos a considerar que dependen de si las raíces de esta ecuación auxiliar son reales y distintas, reales e iguales o complejas.\\
+
+\begin{flushleft}
+\subsubsection{{\large Caso 1: Raíces reales y distintas}}
+\end{flushleft}
+Sean $k_{1}$ y $k_{2}$ las raíces reales de la ecuación auxiliar, tales que $k_{1}\neq k_{2}$. Entonces\\
+$$y_{1}=x^{k_{1}}\hspace{1cm}y\hspace{1cm}y_{2}=x^{k_{2}}$$
+Forman un conjunto fundamental de soluciones. Por tanto, la solución general de la ecuación de Cauchy - Euler para este caso es
+$$y(x)=c_{1}x^{k_{1}}+c_{2}x^{k_{2}}$$
+\subsubsection{Ejelmplo raíces reales y distintas}
+$$x^{2}\frac{d^{2}y}{dx^{2}}+\frac{2}{3}x\frac{dy}{dx}-\frac{2}{9}y=0$$\\
+\textbf{Solución:} Consideramos la solución $y=x^{k}$, las respectivas derivadas son\\
+$$\frac{dy}{dx}=kx^{k-1}\hspace{1cm}y\hspace{1cm}\frac{d^{2}y}{dx^{2}}=k(k-1)x^{k-2}$$
+Sustituimos en la ecuación diferencial\\
+$$x^{2}\left[k(k-1)x^{k-2}\right]+\frac{2}{3}x\left[kx^{k-1}\right]-\frac{2}{9}x^{k}=x^{k}\left[k(k-1)+\frac{2}{3}k-\frac{2}{9}\right]=0$$
+Como $x\neq 0$, entonces la ecuación auxiliar es\\
+$$k(k-1)+\frac{2}{3}k-\frac{2}{9}=0$$\\
+O bien,
+$$k^{2}-\frac{1}{3}k-\frac{2}{9}=0$$\\
+Resolviendo para $k$ obtenemos las raíces $k_{1}=\frac{2}{3}$y$k_{2}=-\frac{1}{3}$.Entonces la solución a la ecuación de Cauchy - Euler es
+$$y(x)=c_{1}x^{2/3}+c_{2}x^{-1/3}$$\\
+\subsubsection{\large Raíces reales repetidas.}
+Si las raíces de la ecuación auxiliar son repetidas, es decir $k_{1}=k_{2}$, entonces se tiene una solución en particular
+$$y=x^{k_{1}}=x^{k_{2}}=x^{k}$$\\
+Cuando las raíces de la ecuación auxiliar son iguales, el discriminante necesariamente es cero, es así que se deduce que las raíces deben ser\\
+$$k=-\frac{(b-a)}{2a}$$\\
+En el método de reducción de orden cuando se conoce una solución no trivial $y_{1}$, una segunda solución $y_{2}$, tal que $y_{1}$ y $y_{2}$ formen un conjunto fundamental de soluciones, puede ser determinada por la expresión\\
+$$y_{2}(x)=y_{1}(x)\int\dfrac{e^{-\int{P(x)dx}}}{y^{2}_{1}(x)}$$\\
+Para usar este resultado se escribe la ecuación de Cauchy - Euler en su forma estandar.\\
+$$\frac{d^{2}y}{dx^{2}}+\frac{b}{ax}\frac{dy}{dx}+\frac{c}{ax^{2}}y=0$$
+Identificamos que\\
+$$P(x)=\frac{b}{ax}\hspace{1cm} y \hspace{1cm}Q(x)=\frac{c}{ax^{2}}$$
+Vemos que\\
+$$\int{P(x)dx}=\int{\frac{b}{ax}dx}=\frac{b}{a}\ln(x)$$\\
+Sustituyendo tenemos\\
+$$y_{2}(x)=x^{k}\int{\frac{e^{-(b/a)\ln(x)}}{x^{2k}}dx}$$\\
+$$x^{k}\int{\frac{x^{-b/a}}{x^{2k}}dx}$$\\
+$$=x^{k}\int{\frac{x^{-b/a}}{x^{-(b-a)/a}}dx}$$\\
+$$=x^{k}\int{\frac{dx}{x}}$$\\
+$$=x^{k}\ln(x)$$\\
+La solución general en el caso en el que las raíces son iguales, es
+$$y(x)=c_{1}x^{k}+c_{2}x^{k}\ln(x)$$
+Para ecuaciones de orrden superior, si $k$ es una raíz de multiplicidad $r$, entonces se puede demostrar que\\
+$$x^{k},\hspace{0.5cm}x^{k}\ln(x),\hspace{0.5cm}x^{k}(\ln(x))^{2},\hspace{0.5cm}\cdots,\hspace{0.5cm}x^{k}(\ln(x))^{r-1}$$\\
+Son $r$ soluciones linealmente independientes. En correspondencia, la solución general de la ecuación diferencial debe contener una combinación lineal de estas $r$ soluciones.\\
+
+\subsubsection{Ejemplo raíces reales repetidas}
+
+$$4x^{2}\frac{d^{2}y}{dx^{2}}+8x\frac{dy}{dx}+y=0$$\\
+\textbf{Solución:} Consideremos la solución $y=x^{k}$, las respectivas derivadas son\\
+$$\frac{dy}{dx}=kx^{k-1}\hspace{1cm}y\hspace{1cm}\frac{d^{2}y}{dx^{2}}=k(k-1)x^{k-2}$$\\
+Sustituimos en la ecuación diferencial\\
+$$4x^{2}\left[k(k-1)x^{k-2}\right]+8x\left[kx^{k-1}\right]+x^{k}=4x^{k}\left[k(k-1)+8k+1\right]=0$$\\
+Como $x\neq0$, entonces la ecuación auxiliar es\\
+$$4k(k-1)+8k+1=0$$\\
+O bien,
+$$4k^{2}+4k+1=0$$\\
+Resolviendo para $k$ obtenemos las raíces $k_{1}=k_{2}=\dfrac{-1}{2}$.Como las raíces son reales repetidas, concluimos que la solución general de la ecuación de Cauchy - Euler es\\
+$$y(x)=c_{1}x^{-1/2}+c_{2}x^{-1/2}\ln(x)=\dfrac{C_{1}}{\sqrt{X}}+\dfrac{C_{2}}{\sqrt{X}}\ln(x)$$\\
+\subsubsection{\large 3: Raíces complejas conjugadas}
+Si las raíces de la ecuación auxiliar son el par conjugado\\
+$$k_{1}=\alpha+i\beta\hspace{1cm}y\hspace{1cm}k_{2}=\alpha-i\beta$$\\
+Donde $\alpha$ y $\beta > 0$ son reales, entonces una solución es\\
+$$y(x)=c_{1}x^{\alpha+i\beta}+c_{2}x^{\alpha-i\beta}$$\\
+Pero cuando las raíces de la ecuación auxiliar son complejas, como en el caso de las ecuaciones con coeficientes constantes, se desea escribir la solución solo en términos de funciones reales. Consideremos la identidad\\
+$$x^{i\beta}=(e^{\ln(x^{i\beta})})=e^{i\beta\ln(x)}$$\\
+Usando la fórmula de Euler podemos escribir\\
+$$x^{i\beta}=\cos\left(\beta\ln(x)\right)+i\sin\left(\beta\ln(x)\right)$$\\
+De forma similar,
+$$x^{-i\beta}=\cos\left(\beta\ln(x)\right)-i\sin\left(\beta\ln(x)\right)$$\\
+Si se suman y restan los dos últimos resultados, se obtiene lo siguiente, respectivamente\\
+$$x^{i\beta}+x^{-i\beta}=2\cos\left(\beta\ln(x)\right)\hspace{1cm} y \hspace{1cm}x^{i\beta}-x^{i\beta}=2i\sin\left(\beta\ln(x)\right)$$\\
+Debido a que $y(x)=c_{1}x^{\alpha+i\beta}+c_{2}x^{\alpha-i\beta}$ es una solución para cualquier valor de las constantes, podemos notar que si elegimos $C_{1}=C_{2}=1$ y, por otro lado, $C_{1}=1,C_{2}=-1$, obtenemos las siguientes dos soluciones, respectivamente\\
+$$y_{1}(x)=x^{\alpha}(x^{i\beta}+x^{-i\beta})\hspace{1cm}y\hspace{1cm}y_{2}(x)=x^{\alpha}(x^{i\beta}-x^{-i\beta})$$\\
+Usando las ecuaciones cuando se suman y se restan los dos últimos resultados, podemos escribir\\
+$$y_{1}(x)=2x^{\alpha}\cos\left(\beta\ln(x)\right)\hspace{1cm}y\hspace{1cm}y_{2}(x)=2ix^{\alpha}\sin\left(\beta\ln(x)\right)$$\\
+De tarea moral muestra que\\
+$$W(x^{\alpha}\cos\left(\beta\ln(x))\right),x^{\alpha}\sin\left(\beta\ln(x)\right)=\beta{x^{2\alpha-1}}\neq0$$\\
+Con esto se concluye que\\
+$$y_{1}(x)=x^{\alpha}\cos\left(\beta\ln(x)\right)\hspace{1cm}y\hspace{1cm}y_{2}(x)=x^{\alpha}\sin\left(\beta\ln(x)\right)$$
+Constituyen un conjunto fundamental de soluciones reales de la ecuación diferencial. Así, la solución general de la ecuación de Cauchy - Euler para $x>0$, en el caso en el que las raices son complejas conjugadas, es\\
+$$y(x)=x^{\alpha}\left[c_{1}\cos\left(\beta\ln(x)\right)+c_{2}\sin\left(\beta\ln(x)\right)\right]$$\\
+\subsubsection{Ejemplo raíces complejas conjugadas} 
+$$x^{2} \dfrac{d^{2}y}{dx^{2}} -5x \dfrac{dy}{dx} +13y = 0$$\\
+Solución: Consideremos la solución $y = x^{k}$, las respectivas derivadas son\\
+$$\frac{dy}{dx} = kx^{k -1} \hspace{1cm} y \hspace{1cm} \dfrac{d^{2}y}{dx^{2}} = k(k -1)x^{k -2}$$\\
+Sustituimos en la ecuación diferencial.\\
+$$x^{2} \left[ k(k -1)x^{k -2} \right] -5x \left[ kx^{k -1} \right] +13x^{k} = x^{k} \left[ k(k -1) -5k + 13 \right] = 0$$\\
+Como $x \neq 0$, entonces la ecuación auxiliar es\\
+$$k(k -1) -5k + 13 = 0$$\\
+o bien,
+$$k^{2} -6k + 13 = 0$$\\
+Resolviendo para $k$ obtenemos las raíces\\
+$$k_{1} = 3+2i \hspace{1cm} y \hspace{1cm} k_{2} = 3-2i$$\\
+Identificamos que\\
+$$\alpha = 3 \hspace{1cm} y \hspace{1cm} \beta = -2i$$\\
+Las raíces son complejas conjugadas. Así, la solución general de la ecuación de Cauchy – Euler es\\
+$$y(x) = x^{3} \left[ c_{1} \cos \left( 2i \ln (x) \right) - c_{2} \sin \left( 2i \ln (x) \right) \right]$$\\
+\subsection{\large Caso no homogéneo}
+Para resolver la ecuación no homogénea , podemos aplicar el método de variación de parámetros, pues basta encontrar el conjunto fundamental de soluciones $\{y_{1}, y_{2}\}$ de la ecuación homogénea asociada y con ello aplicar la fórmula de la solución particular, esto es\\
+$$y_{p}(x)=-y_{1}(x)\int{\frac{y_{2}(x)g(x)}{W(y_{1},y_{2})}dx}+y_{2}(x)\int{\frac{y_{1}(x)g(x)}{W(y_{1},y{2})}dx}$$\\
+Recordar que la función $g(x)$ se obtiene de la forma estándar de la ecuación diferencial.\\\\
+\subsubsection{Ejemplo método de variación de parámetros}
+$$x^{2}\frac{d^{2}y}{dx^{2}}-x\frac{dy}{dx}+y=2x$$\\
+Solución: Debemos hallar el conjunto fundamental de soluciones, así que primero debemos resolver la ecuación homogénea asociada.\\
+$$x^{2}\frac{d^{2}y}{dx^{2}}-x\frac{dy}{dx}+y=0$$\\
+Consideremos la solución $y=x^{k}$ y sus derivadas\\
+$$\frac{dy}{dx}=kx^{k-1}\hspace{1cm}y\hspace{1cm}\frac{d^{2}y}{dx^{2}}=k(k-1)x^{k-2}$$\\
+Sustituimos en la ecuación homogénea asociada.\\
+$$x^{2}\left[k(k-1)x^{k-2}\right]-x\left[kx^{k-1}\right]+x^{k}=x^{k}\left[k(k-1)-k+1\right]=0$$\\
+La ecuación auxiliar es\\
+$$k^{2}-2k+1=0$$\\
+De donde $k_{1}=k_{2}=1$, así la solución complementaria es\\
+$$y_{c}(x)=c_{1}x+c_{2}x\ln(x)$$\\
+Las funciones \\
+$$y_{1}(x)=x\hspace{1cm}y\hspace{1cm}y_{2}(x)=x\ln(x)$$\\
+Conforman al conjunto fundamental de soluciones. Para determinar el Wronskiano vamos a considerar la primer derivada de cada solución.\\
+$$\frac{dy_{1}}{dx}=1\hspace{1cm}y\hspace{1cm}\frac{dy_{2}}{dx}=\ln(x)+1$$\\
+Sustituimos en el Wronskiano\\
+$$W=\begin{vmatrix}
+x&x\ln(x)\\
+1&\ln(x)+1
+\end{vmatrix}=x\ln(x)+x-x\ln(x)=x$$\\
+El Wronskiano es\\
+$$W(x)=x$$\\
+Para determinar la función $g$ dividamos entre $x^{2}$ la ecuación diferencial y así escribirla en su forma estándar.\\
+$$\frac{d^{2}y}{dx^{2}}-\frac{1}{x}\frac{dy}{dx}+\frac{1}{x^{2}}y=\frac{2}{x}$$\\
+vemos que\\
+$$g(x)=\frac{2}{x}$$\\
+Ahora podemos sustituir en la solución particualar\\
+$$y_{p}(x)=-x\int{\frac{x\ln(x)\left(\frac{2}{x}\right)}{x}dx}+x\ln(x)\int{\frac{x\left(\frac{2}{x}\right)}{x}dx}$$\\
+$$=-2x\int{\frac{\ln(x)}{x}dx}+2x\ln(x)\int{\frac{dx}{x}}$$\\
+$$=-2x\frac{[\ln(x)]^{2}}{2}+2x[\ln(x)]^{2}$$\\
+$$=x[\ln(x)]^{2}$$\\
+La solución particular es\\
+$$y_{p}(x)=x[\ln(x)]^{2}$$\\
+Por lo tanto, la solución general de la ecuación de Cauchy - Euler será la superposición de ambas soluciones, esto es\\
+$$y(x)=c_{1}x+c_{2}x\ln(x)+x[\ln(x)]^{2}$$\\
+
+\subsection{\large Redución a coeficientes constantes}
+
+Las similitudes entre las formas de las soluciones de ecuaciones de Cauchy - Euler y soluciones de ecuaciones con coeficientes constantes no es una coincidencia\\
+Por ejemplo, cuando las raíces de las ecuaciones auxiliares para\\
+$$a\frac{d^{2}y}{dx^{2}}+b\frac{dy}{dx}+cy=0$$\\
+y\\
+$$ax^{2}\frac{d^{2}y}{dx^{2}}+bx\frac{dy}{dx}+cy=0$$\\
+Son distintas y reales, las soluciones generales respectivas, para $x>0$, son\\
+$$y(x)=c_{1}e^{k_{1}x}+c_{2}e^{k_{2}x}\hspace{1cm}y\hspace{1cm}y(x)=c_{1}x^{k_{1}}+c_{2}x^{k_{2}}$$\\
+Usando la identidad $$e^{\ln x}=x$$\\
+Para $x>0$, la segunda solución dada en las soluciones generales pude expresarse en la misma forma que la primera solución.\\
+$$y(x)=c_{1}e^{k_{1}\ln(x)}+c_{2}e^{k_{2}\ln(x)}=c_{1}e^{k_{1}t}+c_{2}e^{k_{2}t}$$\\
+Donde $t=\ln(x)$. Edte resultado ilustra que cualquier ecuación de Cauchy - Euler se puede escribir como una ecuación con coeficientes constantes haciendo la sustitución $x=e^{t}$ y con esto resolver la nueva ecuación diferencial en términos de la variable $t$. Una vez obtenida la solución general, sustituir nuevamente $t=\ln(x)$. Este método requiere el uso de la cadena.\\
+Si se hace la sustitución $x=e^{t}$, (o bien $t=\ln(x)$), aplicando la regla de la cadena obtenemos las siguientes expresiones para las derivadas.\\
+$$\frac{dy}{dx}=\frac{dy}{dt}\frac{dt}{dx}=\frac{1}{x}\frac{dy}{dt}$$\\
+y\\
+$$\frac{d^{2}y}{dx^{2}}=\frac{d}{dx}\left(\frac{1}{x}\frac{dy}{dt}\right)=-\frac{1}{x^{2}}\frac{dy}{dt}+\frac{1}{x^{2}}\frac{d^{2}y}{dt^{2}}=\frac{1}{x^{2}}\left(\frac{d^{2}y}{dt^{2}}-\frac{dy}{dt}\right)$$\\
+Sustituyendo en la ecuación de Cauchy - Euler obtenemos lo siguiente.\\
+$$ax^{2}\frac{d^{2}y}{dx^{2}}+bx\frac{dy}{dx}+cy=ax^{2}\left[\frac{1}{x^{2}}\left(\frac{d^{2}y}{dt^{2}}-\frac{dy}{dt}\right)\right]+bx\left[\frac{1}{x}\frac{dy}{dt}\right]+cy$$\\
+$$=a\frac{d^{2}y}{dt^{2}}+(b-a)\frac{dy}{dt}+cy$$\\
+Por lo tanto, haciendo la sustitución $x=e^{t}$ reducimos la ecuación de Cauchy - Euler a la ecuación\\
+$$a\frac{d^{2}y(t)}{dt^{2}}+(b-a)\frac{dy(t)}{dt}+cy(t)=g(t)$$\\
+que corresponde a una ecuación diferencial con coeficientes constantes en donde la variable independiente es $t$.
+\pagebreak
+\section{\large BIBLIOGRAFIAS}
+ https://blog.nekomath.com/ecuaciones-diferenciales-i-ecuacion-de-cauchy-euler/\\
+ https://docs.google.com/viewer?a=vpid=sitessrcid=ZGVmYXVsdGRvbWFpbnxvbWFy\\
+ ZGlhemhlcm5hbmRlejIyfGd4OjJhYWViYjUzZjUyZWVjOTQ\\
+ https://www.youtube.com/watch?v=Vrj1wY4ZW1Mt=511s
+
+\end{document}

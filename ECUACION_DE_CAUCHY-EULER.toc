@@ -1,0 +1,15 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}{\normalsize INTRODUCCIÓN.}}{3}{}%
+\contentsline {section}{\numberline {2}{\normalsize DESARROLLO.}}{3}{}%
+\contentsline {subsection}{\numberline {2.1}{\large Definición ecuación Cauchy - Euler.}}{3}{}%
+\contentsline {subsection}{\numberline {2.2}{\large Método de resolución}}{4}{}%
+\contentsline {subsubsection}{\numberline {2.2.1}{\large Caso 1: Raíces reales y distintas}}{5}{}%
+\contentsline {subsubsection}{\numberline {2.2.2}Ejelmplo raíces reales y distintas}{5}{}%
+\contentsline {subsubsection}{\numberline {2.2.3}\large Raíces reales repetidas.}{6}{}%
+\contentsline {subsubsection}{\numberline {2.2.4}Ejemplo raíces reales repetidas}{8}{}%
+\contentsline {subsubsection}{\numberline {2.2.5}\large 3: Raíces complejas conjugadas}{9}{}%
+\contentsline {subsubsection}{\numberline {2.2.6}Ejemplo raíces complejas conjugadas}{11}{}%
+\contentsline {subsection}{\numberline {2.3}\large Caso no homogéneo}{12}{}%
+\contentsline {subsubsection}{\numberline {2.3.1}Ejemplo método de variación de parámetros}{13}{}%
+\contentsline {subsection}{\numberline {2.4}\large Redución a coeficientes constantes}{15}{}%
+\contentsline {section}{\numberline {3}\large BIBLIOGRAFIAS}{18}{}%
